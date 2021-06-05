@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Tienda Online Quala | Seguimiento</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
+  <!-- Morris chart -->
+  <link rel="stylesheet" href="bower_components/morris.js/morris.css">
+  <!-- jvectormap -->
+  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
+  <!-- Date Picker -->
+  <link rel="stylesheet" href="bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="bower_components/bootstrap-daterangepicker/daterangepicker.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+
+</head>
+<body class="hold-transition skin-blue-light sidebar-mini">
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="02-Quala.html" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><b>T</b>OQ</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><b>Tienda Online </b>Quala</span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">3</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Tienes (3) mensajes nuevos</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li><!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Equipo de Soporte
+                        <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                      </h4>
+                      <p>Respuesta a tu solicitud</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Lina María
+                        <small><i class="fa fa-clock-o"></i> 2 hours</small>
+                      </h4>
+                      <p>Ya viste el comercial de Panelada?</p>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        Representante de Ventas
+                        <small><i class="fa fa-clock-o"></i> Today</small>
+                      </h4>
+                      <p>Gracias por contestar la encuesta</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">Ver todos...</a></li>
+            </ul>
+          </li>
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">5</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">Tienes 4 notificaciones nuevas</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 3 personas te han añadido a su red
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-warning text-yellow"></i> Recuerda cambiar tu contraseña con regularidad
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-shopping-cart text-green"></i> Tu pedido ha sido entregado
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user text-red"></i> Bienvenida a la Tienda Online Quala
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">Ver todas...</a></li>
+            </ul>
+          </li>
+    
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="dist/img/user7-128x128.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Dora la Tendedora!</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="dist/img/user7-128x128.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Tienda: Granito de Oro
+                  <small>Se unió desde Nov. 2020</small>
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-right">
+                  <a href="01-loginQuala.html" class="btn btn-default btn-flat">Salir</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="dist/img/user7-128x128.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Dora la Tendedora!</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> En línea</a>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Buscar en el sitio...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu" data-widget="tree">
+        <li class="header">Menú de Navegación</li>
+        
+        <li>
+          <a href="02-Quala.html">
+            <i class="fa fa-mouse-pointer"></i> <span>Inicio</span>
+          </a>
+        </li>
+        
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-shopping-cart"></i> <span>Pedidos</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="03-Pedido.html"><i class="fa fa-plus-circle"></i> Tomar Mi Pedido</a></li>
+            <li><a href="04-Track.html"><i class="fa fa-rocket"></i> Seguir Mi Pedido</a></li>
+          </ul>
+        </li>
+        
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-dollar"></i>
+            <span>Pagos</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="06-Pagar.html"><i class="fa fa-credit-card"></i> Pagar Mi Factura</a></li>
+            <li><a href="07-Historia.html"><i class="fa fa-suitcase"></i> Ver mis historia</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-building"></i>
+            <span>Mi Negocio</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="09-Perfil.html"><i class="fa fa-user"></i> Perfil</a></li>
+            <li><a href="10-Calendario.html"><i class="fa fa-calendar"></i> Calendario</a></li>
+            <li><a href="11-Contactos.html"><i class="fa fa-phone"></i> Contactos</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Seguimiento
+        <small>Verifica la ubicación y estado de tu pedido</small>
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="box box-success">
+                    <div class="box-header with-border">
+                        <i class="fa fa-map"></i>
+                        <h3 class="box-title">Ubicación de tu Pedido</h3>
+
+                          <div class="box-tools pull-right">
+                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                          </div>
+                    </div>
+                    <div class="box-body no-padding">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="pad">
+                                    <div id="mapid" style="height: 475px;"></div>
+                                    <!--<div id="mapid" style="width: 600px; height: 400px;"></div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                 <div class="info-box bg-maroon">
+                 
+                    <span class="info-box-icon"><i class="glyphicon glyphicon-shopping-cart"></i></span>
+        
+                    <div class="info-box-content">
+                    <span class="info-box-text">Generación del Pedido</span>
+                    <span class="info-box-number">02/06/21</span>
+        
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                    <span class="progress-description">
+                            Pedido realizado por medio digital
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+                <div class="info-box bg-green">
+                    <span class="info-box-icon"><i class="glyphicon glyphicon-list-alt"></i></span>
+        
+                    <div class="info-box-content">
+                    <span class="info-box-text">Embarque y facturación del pedido</span>
+                    <span class="info-box-number">02/06/21</span>
+        
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 100%"></div>
+                    </div>
+                    <span class="progress-description">
+                            Tu pedido finalizó el proceso de embarque y facturación.
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+                <div class="info-box bg-red">
+                    <span class="info-box-icon"><i class="glyphicon glyphicon-road"></i></span>
+        
+                    <div class="info-box-content">
+                    <span class="info-box-text">En viaje</span>
+                    <span class="info-box-number">03/06/21</span>
+        
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 45%"></div>
+                    </div>
+                    <span class="progress-description">
+                            El pedido se encuentra en viaje con el transportador
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <!-- /.info-box -->
+                <div class="info-box bg-aqua">
+                    <span class="info-box-icon"><i class="glyphicon glyphicon-usd"></i></span>
+        
+                    <div class="info-box-content">
+                    <span class="info-box-text">Pago del pedido</span>
+                    <span class="info-box-number">-</span>
+        
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                    <span class="progress-description">
+                            Realiza el pago de esta factura antes de la llegada del transportador.
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+                <div class="info-box bg-purple">
+                    <span class="info-box-icon"><i class="glyphicon glyphicon-phone"></i></span>
+        
+                    <div class="info-box-content">
+                    <span class="info-box-text">Encuesta de satisfacción</span>
+                    <span class="info-box-number">-</span>
+        
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 0%"></div>
+                    </div>
+                    <span class="progress-description">
+                            Evalúa tu experiencia en el uso de este canal.
+                        </span>
+                    </div>
+                    <!-- /.info-box-content -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script>
+<!-- Bootstrap 3.3.7 -->
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- Morris.js charts -->
+<script src="bower_components/raphael/raphael.min.js"></script>
+<script src="bower_components/morris.js/morris.min.js"></script>
+<!-- Sparkline -->
+<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<!-- jvectormap -->
+<script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="plugins/jvectormap/jquery-jvectormap-co-mill.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="bower_components/jquery-knob/dist/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="bower_components/moment/min/moment.min.js"></script>
+<script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- datepicker -->
+<script src="bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js"></script>
+<!-- Slimscroll -->
+<script src="bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<script>
+    var mymap = L.map('mapid').setView([4.5995804,-74.1380209], 15);
+
+	L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 18,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox/streets-v11',
+		tileSize: 512,
+		zoomOffset: -1
+	}).addTo(mymap);
+    
+    L.marker([4.5995804,-74.1380209]).addTo(mymap)
+		.bindPopup("<b>Tu pedido ha sido embarcado</b><br />03/Jun/21 11:35 AM").openPopup();
+        
+    L.marker([4.6072695,-74.1313797]).addTo(mymap)
+		.bindPopup("<b>Tu pedido está en transito</b><br />03/Jun/21 01:40 PM").openPopup();
+
+	var popup = L.popup();
+    // https://leafletjs.com/examples/quick-start/
+    /*
+    $('#map-track').vectorMap({
+    map              : 'co_mill',
+    normalizeFunction: 'polynomial',
+    hoverOpacity     : 0.7,
+    backgroundColor  : '#d0eaf7',
+    regionStyle      : {
+      initial      : {
+        fill            : 'rgba(69, 144, 110, 1)',
+        'fill-opacity'  : 1,
+        stroke          : 'none',
+        'stroke-width'  : 0,
+        'stroke-opacity': 1
+      },
+      hover        : {
+        'fill-opacity': 0.7,
+        cursor        : 'pointer'
+      },
+      selected     : {
+        fill: 'yellow'
+      },
+      selectedHover: {}
+    },
+    markerStyle      : {
+      initial: {
+        fill  : '#0f0273',
+        stroke: '#111'
+      }
+    },
+    zoomButtons : false,
+    markers          : [
+      { latLng: [4.630807,-74.0912217], name: '04/02/21: En Viaje' },
+      { latLng: [4.5960727,-74.1317338], name: '03/02/21: Origen' }
+      
+    ]
+  });
+  
+  var mapObj = $('#map-track').vectorMap('get', 'mapObject');
+  
+  mapObj.setFocusLatLng = function(scale, lat, lng){
+        var point,
+            proj = jvm.WorldMap.maps[this.params.map].projection,
+            centralMeridian = proj.centralMeridian,
+            width = this.width - this.baseTransX * 2 * this.baseScale,
+            height = this.height - this.baseTransY * 2 * this.baseScale,
+            inset,
+            bbox,
+            scaleFactor = this.scale / this.baseScale,
+            centerX,
+            centerY;
+
+        if (lng < (-180 + centralMeridian)) {
+            lng += 360;
+        }
+
+        point = jvm.Proj[proj.type](lat, lng, centralMeridian);
+
+        inset = this.getInsetForPoint(point.x, point.y);
+        if (inset) {
+            bbox = inset.bbox;
+
+            centerX = (point.x - bbox[0].x) / (bbox[1].x - bbox[0].x);
+            centerY = (point.y - bbox[0].y) / (bbox[1].y - bbox[0].y);
+
+            this.setFocus(scale, centerX, centerY);
+        }
+    }
+
+    mapObj.setFocusLatLng(20, 4.630807,-74.0912217);
+  */
+</script>
+</body>
+</html>
