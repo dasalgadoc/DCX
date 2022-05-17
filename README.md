@@ -8,17 +8,17 @@
 
 ```mermaid
   
-  flowchart LR
+  flowchart TB
     
-    subgraph caps
+    subgraph CAPS
       ALF <--> Accumulator
       Accumulator <--> CAPs
     end
     
     id1([External Sources]) --> ALF
-    CAPs --> id2([Clients])
+    CAPs <--> id2([Clients])
    
-    click ALF "http://www.google.com.co" _blank
+    click ALF "http://www.google.com.co" "Open this in a new tab" _blank
     
   
 ```
