@@ -18,7 +18,7 @@
     id1([External Sources]) --> ALF
     CAPs --> id2([Clients])
    
-    click ALF "www.google.com.co" _blank
+    click ALF "http://www.google.com.co" _blank
     
   
 ```
